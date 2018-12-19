@@ -1,0 +1,71 @@
+typemeta:
+  kind: Environment
+  apiversion: jenkins.io/v1
+objectmeta:
+  name: staging
+  generatename: ""
+  namespace: ""
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels: {}
+  annotations: {}
+  ownerreferences: []
+  initializers: null
+  finalizers: []
+  clustername: ""
+spec:
+  label: Staging
+  namespace: jx-staging
+  cluster: ""
+  promotionstrategy: Auto
+  source:
+    kind: ""
+    url: https://github.com/jstrachan/environment-jstrachan-prow27-staging.git
+    ref: master
+  order: 100
+  kind: Permanent
+  pullrequesturl: ""
+  teamsettings:
+    usegitops: false
+    askoncreate: false
+    branchpatterns: ""
+    forkbranchpatterns: ""
+    quickstartlocations: []
+    buildpackurl: ""
+    buildpackref: ""
+    helmbinary: ""
+    postpreviewjobs: []
+    promotionengine: ""
+    notiller: false
+    helmtemplate: false
+    gitserver: ""
+    organisation: ""
+    pipelineusername: ""
+    dockerregistryorg: ""
+    gitprivate: false
+    kubeprovider: ""
+    appsrepository: ""
+    buildpackname: ""
+    storagelocations: []
+  previewgitspec:
+    name: ""
+    url: ""
+    user:
+      username: ""
+      name: ""
+      linkurl: ""
+      imageurl: ""
+    title: ""
+    description: ""
+    buildstatus: ""
+    buildstatusurl: ""
+    applicationname: ""
+    applicationurl: ""
+  webhookengine: ""
+status:
+  version: ""

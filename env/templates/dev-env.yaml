@@ -1,0 +1,80 @@
+typemeta:
+  kind: Environment
+  apiversion: jenkins.io/v1
+objectmeta:
+  name: dev
+  generatename: ""
+  namespace: ""
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels:
+    env: dev
+    team: jx
+  annotations: {}
+  ownerreferences: []
+  initializers: null
+  finalizers: []
+  clustername: ""
+spec:
+  label: Development
+  namespace: jx
+  cluster: ""
+  promotionstrategy: Never
+  source:
+    kind: ""
+    url: https://github.com/jstrachan/environment-jstrachan-prow27-dev.git
+    ref: master
+  order: 0
+  kind: Development
+  pullrequesturl: ""
+  teamsettings:
+    usegitops: true
+    askoncreate: false
+    branchpatterns: ""
+    forkbranchpatterns: ""
+    quickstartlocations:
+    - giturl: https://github.com
+      gitkind: github
+      owner: jenkins-x-quickstarts
+      includes:
+      - '*'
+      excludes:
+      - WIP-*
+    buildpackurl: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes.git
+    buildpackref: master
+    helmbinary: ""
+    postpreviewjobs: []
+    promotionengine: Prow
+    notiller: false
+    helmtemplate: true
+    gitserver: https://github.com
+    organisation: ""
+    pipelineusername: jstrachan
+    dockerregistryorg: ""
+    gitprivate: false
+    kubeprovider: gke
+    appsrepository: http://chartmuseum.jenkins-x.io
+    buildpackname: kubernetes-workloads
+    storagelocations: []
+  previewgitspec:
+    name: ""
+    url: ""
+    user:
+      username: ""
+      name: ""
+      linkurl: ""
+      imageurl: ""
+    title: ""
+    description: ""
+    buildstatus: ""
+    buildstatusurl: ""
+    applicationname: ""
+    applicationurl: ""
+  webhookengine: Prow
+status:
+  version: ""

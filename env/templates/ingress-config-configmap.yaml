@@ -1,0 +1,27 @@
+typemeta:
+  kind: ConfigMap
+  apiversion: v1
+objectmeta:
+  name: ingress-config
+  generatename: ""
+  namespace: ""
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels: {}
+  annotations: {}
+  ownerreferences: []
+  initializers: null
+  finalizers: []
+  clustername: ""
+data:
+  domain: 35.241.146.88.nip.io
+  email: ""
+  exposer: Ingress
+  issuer: ""
+  tls: "false"
+binarydata: {}
